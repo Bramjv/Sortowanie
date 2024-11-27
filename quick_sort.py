@@ -19,6 +19,7 @@ def quick_sort(lst):
 table = random_table()
 print(f"Tablica: {table}")
 
+sorted_table = quick_sort(table)
 execution_time = measure_time(quick_sort,table)
-print(f"Posortowana tablica: {table}")
+print(f"Posortowana tablica: {sorted_table}")
 print(f"Sortowanie trwało : {execution_time:.6f} sekund")
