@@ -1,6 +1,5 @@
 from main import random_table,measure_time
 
-
 def quick_sort(lst):
     if len(lst) <= 1:
         return lst
@@ -14,7 +13,6 @@ def quick_sort(lst):
     print(f"Mniejsze: {lesser}, Równe: {equal}, Większe: {greater}")
 
     return quick_sort(lesser) + equal + quick_sort(greater)
-
 
 table = random_table()
 print(f"Tablica: {table}")
